@@ -64,7 +64,7 @@
               эффективные решения <br />
               для вашего бизнеса
             </h1>
-            <button class="button-hero">Заказать услугу</button>
+            <button data-modal-open class="button-hero">Заказать услугу</button>
           </div>
         </div>
       </section>
@@ -468,6 +468,48 @@
         </div>
       </section>
     </footer>
+    <article>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <form action="">
+            <div class="form-field">
+              <button data-modal-close>Закрыть</button>
+              <h2>Оставьте свои данные, мы вам перезвоним</h2>
+              <label for="name"></label>
+              <input type="text" id="name" placeholder="Имя" />
+            </div>
+            <div class="form-field">
+              <label for="tel"></label>
+              <input type="text" id="tel" placeholder="Телефон" />
+            </div>
+            <div class="form-field">
+              <label for="email"></label>
+              <input type="text" id="email" placeholder="Почта" />
+            </div>
+            <div class="form-field">
+              <label for="comment"></label>
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="10"
+                placeholder="Коментарий"
+              ></textarea>
+            </div>
+            <div class="form-field">
+              <input type="checkbox" id="confirm" name="confirm" />
+              <label for="confirm">
+                Соглашаюсь с рассылкой и принимаю
+                <a href="">Условия договора</a></label
+              >
+            </div>
+          </form>
+          <button>Отправить</button>
+        </div>
+      </div>
+    </article>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
 <!-- check check check -->
